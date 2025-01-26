@@ -1,4 +1,4 @@
-# F1 Data Visualization
+# F1 Data Visualization tool
 
 ## Description
 An interactive web platform that leverages new advanced D3.js visualizations to analyze Formula 1 performance. The goal is to identify underperformance in drivers and understand the reasons behind it through unconventional analysis tools.
