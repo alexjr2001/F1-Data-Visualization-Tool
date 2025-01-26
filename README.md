@@ -17,6 +17,10 @@ This project is designed for developers, Formula 1 enthusiasts, and professional
 3. **Sector Analysis (Main Chart)**: Focus on specific straights and corners, highlighting performance indices. Click on a sector to generate detailed visualizations of that section.
 
 ---
+CLICK IN THE IMAGE!
+<p align="center"><a href="https://www.youtube.com/watch?v=VeX6EFk08Hs"><img src="https://github.com/user-attachments/assets/b799637c-291f-40b1-8a6f-c1f455ca5179" width="800"></p>
+
+
 
 ## Technologies Used
 ### Frontend
