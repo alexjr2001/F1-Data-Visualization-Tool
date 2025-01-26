@@ -1,0 +1,169 @@
+/* Estilos para la página */
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #f0f0f0;
+    text-align: center;
+}
+
+#chart {
+    margin: auto;
+    width: 80%;
+    height: 500px;
+}
+
+.axis text {
+    fill: #080707;
+    font-size: 12px;
+}
+
+
+h1 {
+    color: #f0f0f0;
+}
+
+/* Estilos para el gráfico */
+#chart svg {
+    background-color: #262626;
+}
+
+.axis text {
+    fill: #f0f0f0;
+}
+
+.axis path,
+.axis line {
+    stroke: #888;
+}
+
+.dimension text {
+    fill: #f0f0f0;
+    font-weight: bold;
+}
+
+path.line {
+    fill: none;
+    stroke-width: 1.5;
+    opacity: 0.7;
+}
+
+#selectedDrivers {
+    display: grid; /* Usar Grid */
+    grid-template-columns: repeat(2, 1fr); /* Crear dos columnas de igual tamaño */
+    gap: 0.5rem; /* Espacio entre los elementos */
+}
+
+.driver-tag {
+    /*background-color: rgb(94, 246, 162); /* Fondo oscuro para cada tag */
+    background-color: rgb(175, 246, 175); /* Fondo oscuro para cada tag */
+    padding: 0.5rem; /* Espaciado dentro de cada tag */
+    border-radius: 0.375rem; /* Bordes redondeados */
+    color: black; /* Color del texto */
+    display: flex; /* Flexbox para colocar el texto y el botón "x" */
+    justify-content: space-between; /* Espacio entre el texto y el botón "x" */
+    align-items: center; /* Alinear verticalmente */
+}
+
+.remove-tag {
+    cursor: pointer; /* Cambio de cursor al pasar por encima */
+    color: #333333; /* Color rojo para el botón "x" */
+    margin-left: 0.5rem; /* Espacio entre el texto y el "x" */
+}
+
+
+#introScreen {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), limegreen);
+    animation: screenBounce 2s infinite; /* Animación de rebote */
+    transition: transform 0.8s ease-out; /* Transición para el movimiento hacia arriba */
+}
+
+/* Rebotar toda la pantalla */
+@keyframes screenBounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Estilo y posición de la flecha */
+#slideArrow {
+    animation: arrowBounce 2s infinite; /* Animación de rebote sincronizada */
+}
+
+/* Rebote de la flecha */
+@keyframes arrowBounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+
+.swiper-container {
+    width: 100%;
+    max-width: 960px; /* Limita el ancho del Swiper */
+    margin: 0 auto;
+    position: relative; /* Necesario para posicionar las flechas */
+    z-index: 10; /* Menor prioridad que el menú */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Oculta las diapositivas fuera del centro */
+    transition: opacity 0.3s ease-in-out; /* Transición suave */
+}
+
+.swiper-slide-active {
+    opacity: 1; /* Solo la diapositiva activa será visible */
+}
+
+/* Estilo para las flechas de navegación */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white; /* Cambia el color de las flechas */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajusta el centrado vertical */
+    width: 30px; /* Tamaño de las flechas */
+    height: 30px;
+    z-index: 10;
+}
+
+/* Flecha izquierda: Alinear al borde izquierdo del gráfico */
+.swiper-button-prev {
+    left: -40px; /* Ajusta según el espacio entre la flecha y el gráfico */
+}
+
+/* Flecha derecha: Alinear al borde derecho del gráfico */
+.swiper-button-next {
+    right: -40px; /* Ajusta según el espacio entre la flecha y el gráfico */
+}
+
+#menuContent {
+    z-index: 20; /* Mayor prioridad */
+}

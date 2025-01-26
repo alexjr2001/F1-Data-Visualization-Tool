@@ -1,0 +1,6 @@
+flask==3.0.3             # Management of the web server
+flask-cors==5.0.0       # Support for CORS
+fastf1==3.4.4            # Formula 1 data and telemetry
+numpy==1.26.4           # numerical processing
+pandas==2.2.3            # Handling of tabular data
+

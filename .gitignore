@@ -1,0 +1,13 @@
+#How I built the dataset
+temp
+
+# The dataset zipped for being uploaded in kaggle
+2024/*.zip
+
+# Ignore fast f1 cache folders
+cache/
+page/cache/
+
+
+#Too big for github, besides they are not used, they are just a try for don't request in real-time
+2024/timeSeries
